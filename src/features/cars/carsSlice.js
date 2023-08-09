@@ -1,7 +1,6 @@
-import { createSelector, createEntityAdapter } from "@reduxjs/toolkit";
 import { apiSlice } from "../api/apiSlice";
 
-export const extendedApiSlice = apiSlice.injectEndpoints({
+export const carsApiSlice = apiSlice.injectEndpoints({
     endpoints: (builder) => ({
         getCars: builder.query({
             query: (searchParams = "") => `/cars${searchParams}`,
@@ -30,16 +29,4 @@ export const extendedApiSlice = apiSlice.injectEndpoints({
     }),
 });
 
-export const { useGetCarsQuery, useGetCarQuery, useAddCarMutation } = extendedApiSlice;
-
-export const selectCarsResult = apiSlice.endpoints.getCars.select();
-
-const emptyCars = [];
-
-export const selectAllCars = createSelector(selectCarsResult, (carsResult) => carsResult?.data ?? emptyCars);
-
-export const selectCarById = createSelector(
-    selectAllCars,
-    (state, carId) => carId,
-    (cars, carId) => cars.find((user) => user.id === carId)
-);
+export const { useGetCarsQuery, useGetCarQuery, useAddCarMutation } = carsApiSlice;

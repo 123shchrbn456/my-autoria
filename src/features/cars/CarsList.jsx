@@ -1,15 +1,13 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { selectAllCars, selectCarById, useGetCarsQuery } from "./carsSlice";
+import { useGetCarsQuery } from "./carsSlice";
 import CarItem from "./CarItem";
-import { useSelector } from "react-redux";
 
 const CarsList = () => {
     const location = useLocation();
     const searchParams = location.search;
 
     const { data: cars = [], isLoading, isSuccess, isError, error } = useGetCarsQuery(searchParams);
-
     let content;
 
     if (isLoading) {

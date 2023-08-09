@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import { useGetCarQuery } from "./carsSlice";
 
 const SingleCarPage = () => {
     const { id } = useParams();
     const { data: car, isLoading, isSuccess, isError, error } = useGetCarQuery(id);
-
-    console.log(car);
 
     let content;
 

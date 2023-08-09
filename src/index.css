@@ -31,6 +31,40 @@
     padding: 10px;
 }
 
+.car-item a {
+    font-weight: 700;
+    color: grey;
+    text-decoration: none;
+}
+
+.car-item a:hover {
+    color: black;
+}
+
+.car-item a:visited {
+    color: red;
+}
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+}
+
+.breadcrumb-item::after {
+    padding-left: 7px;
+    content: "/";
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.breadcrumb a:hover {
+    color: rgba(42, 42, 42, 0.66);
+}
+
 h1 {
     font-size: 3.2em;
     line-height: 1.1;

@@ -252,11 +252,29 @@
             }
         }
     ],
+    "carsGenerations": {
+        "bmw5Series": [
+            "G60(8th Gen)",
+            "G30(7th Gen) Facelift",
+            "G30(7th Gen)",
+            "F10(6th Gen) Facelift",
+            "F10(6th Gen)",
+            "E60(5th Gen) Facelift",
+            "E60(5th Gen)",
+            "E39(4th Gen) Facelift",
+            "E39(4th Gen)",
+            "E34(3rd Gen)",
+            "E28(2nd Gen)",
+            "E12(1st Gen) Facelift",
+            "E12(1st Gen)"
+        ]
+    },
     "cars": [
         {
             "id": 1,
             "brand": "bmw",
             "model": "520",
+            "generation": "G60(8th Gen)",
             "engine": {
                 "fuel": "gas",
                 "volume": "2.5",
@@ -274,7 +292,8 @@
         {
             "id": 2,
             "brand": "bmw",
-            "model": "420",
+            "model": "535",
+            "generation": "G60(8th Gen)",
             "engine": {
                 "fuel": "diesel",
                 "volume": "3",
@@ -291,8 +310,9 @@
         },
         {
             "id": 3,
-            "brand": "audi",
-            "model": "a6",
+            "brand": "bmw",
+            "model": "545",
+            "generation": "G60(8th Gen)",
             "engine": {
                 "fuel": "hybrid",
                 "volume": "2",
@@ -309,8 +329,9 @@
         },
         {
             "id": 4,
-            "brand": "renault",
-            "model": "logan",
+            "brand": "bmw",
+            "model": "525",
+            "generation": "G30(8th Gen)",
             "engine": {
                 "fuel": "gas",
                 "volume": "2",
@@ -327,8 +348,9 @@
         },
         {
             "id": 5,
-            "brand": "renault",
-            "model": "megane",
+            "brand": "bmw",
+            "model": "530d",
+            "generation": "G30(8th Gen)",
             "engine": {
                 "fuel": "diesel",
                 "volume": "2",
@@ -345,8 +367,9 @@
         },
         {
             "id": 6,
-            "brand": "ford",
-            "model": "transit",
+            "brand": "bmw",
+            "model": "540",
+            "generation": "G30(8th Gen)",
             "engine": {
                 "fuel": "diesel",
                 "volume": "2",
@@ -363,8 +386,9 @@
         },
         {
             "id": 7,
-            "brand": "mercedes",
-            "model": "c-klass",
+            "brand": "bmw",
+            "model": "M5",
+            "generation": "F10(8th Gen)",
             "engine": {
                 "fuel": "diesel",
                 "volume": "4.5",
@@ -381,8 +405,9 @@
         },
         {
             "id": 8,
-            "brand": "ford",
-            "model": "kuga",
+            "brand": "bmw",
+            "model": "520d",
+            "generation": "F10(8th Gen)",
             "engine": {
                 "fuel": "hybrid",
                 "volume": "1.0",
@@ -399,8 +424,9 @@
         },
         {
             "id": 9,
-            "brand": "mercedes",
-            "model": "140",
+            "brand": "bmw",
+            "model": "320",
+            "generation": "G20(7th Gen)",
             "engine": {
                 "fuel": "gas",
                 "volume": "6",
@@ -417,8 +443,9 @@
         },
         {
             "id": 10,
-            "brand": "ferrari",
-            "model": "488",
+            "brand": "bmw",
+            "model": "340",
+            "generation": "G20(7th Gen)",
             "engine": {
                 "fuel": "gas",
                 "volume": "6",
@@ -435,8 +462,237 @@
         },
         {
             "id": 11,
-            "brand": "Volkswaggen ",
-            "model": "Gold GTI",
+            "brand": "bmw ",
+            "model": "335",
+            "generation": "E90(5th Gen)",
+            "engine": {
+                "fuel": "gas",
+                "volume": "2.0",
+                "horsePower": "320",
+                "cylindersAmount": "4"
+            },
+            "transmissionType": "automatic",
+            "year": "2019",
+            "price": "35000",
+            "currency": "USD",
+            "region": "Berlin",
+            "drive": "FWD",
+            "userId": 1
+        },
+        {
+            "id": 12,
+            "brand": "bmw ",
+            "model": "335",
+            "generation": "E90(5th Gen)",
+            "engine": {
+                "fuel": "gas",
+                "volume": "2.0",
+                "horsePower": "320",
+                "cylindersAmount": "4"
+            },
+            "transmissionType": "automatic",
+            "year": "2019",
+            "price": "35000",
+            "currency": "USD",
+            "region": "Berlin",
+            "drive": "FWD",
+            "userId": 1
+        },
+        {
+            "id": 13,
+            "brand": "audi",
+            "model": "a6",
+            "generation": "c6",
+            "engine": {
+                "fuel": "hybrid",
+                "volume": "2",
+                "horsePower": "190",
+                "cylindersAmount": "6"
+            },
+            "transmissionType": "manual",
+            "year": "2009",
+            "price": "50000",
+            "currency": "USD",
+            "region": "Kyiv",
+            "drive": "AWD",
+            "userId": 3
+        },
+        {
+            "id": 14,
+            "brand": "audi",
+            "model": "a6",
+            "generation": "c6",
+            "engine": {
+                "fuel": "gas",
+                "volume": "2",
+                "horsePower": "190",
+                "cylindersAmount": "6"
+            },
+            "transmissionType": "manual",
+            "year": "2009",
+            "price": "50000",
+            "currency": "USD",
+            "region": "Kyiv",
+            "drive": "AWD",
+            "userId": 4
+        },
+        {
+            "id": 15,
+            "brand": "mercedes",
+            "model": "C300",
+            "generation": "w205",
+            "engine": {
+                "fuel": "diesel",
+                "volume": "2",
+                "horsePower": "190",
+                "cylindersAmount": "6"
+            },
+            "transmissionType": "manual",
+            "year": "2009",
+            "price": "50000",
+            "currency": "USD",
+            "region": "Kyiv",
+            "drive": "AWD",
+            "userId": 5
+        },
+        {
+            "id": 16,
+            "brand": "mercedes",
+            "model": "c250",
+            "generation": "w205",
+            "engine": {
+                "fuel": "diesel",
+                "volume": "2",
+                "horsePower": "190",
+                "cylindersAmount": "6"
+            },
+            "transmissionType": "manual",
+            "year": "2009",
+            "price": "11000",
+            "currency": "USD",
+            "region": "Kyiv",
+            "drive": "AWD",
+            "userId": 6
+        },
+        {
+            "id": 17,
+            "brand": "mercedes",
+            "model": "e450",
+            "generation": "w213 (5th Gen)",
+            "engine": {
+                "fuel": "diesel",
+                "volume": "4.5",
+                "horsePower": "530",
+                "cylindersAmount": "8"
+            },
+            "transmissionType": "automatic",
+            "year": "2022",
+            "price": "30000",
+            "currency": "USD",
+            "region": "Kyiv",
+            "drive": "AWD",
+            "userId": 7
+        },
+        {
+            "id": 18,
+            "brand": "mercedes",
+            "model": "e200d",
+            "generation": "w213 (5th Gen)",
+            "engine": {
+                "fuel": "hybrid",
+                "volume": "1.0",
+                "horsePower": "120",
+                "cylindersAmount": "3"
+            },
+            "transmissionType": "automatic",
+            "year": "2019",
+            "price": "25000",
+            "currency": "USD",
+            "region": "Lviv",
+            "drive": "FWD",
+            "userId": 8
+        },
+        {
+            "id": 19,
+            "brand": "mercedes",
+            "model": "140",
+            "generation": "F10(8th Gen)",
+            "engine": {
+                "fuel": "gas",
+                "volume": "6",
+                "horsePower": "470",
+                "cylindersAmount": "8"
+            },
+            "transmissionType": "automatic",
+            "year": "1995",
+            "price": "7000",
+            "currency": "USD",
+            "region": "Donetsk",
+            "drive": "RWD",
+            "userId": 9
+        },
+        {
+            "id": 20,
+            "brand": "lexus",
+            "model": "is250",
+            "generation": "XE30",
+            "engine": {
+                "fuel": "gas",
+                "volume": "6",
+                "horsePower": "670",
+                "cylindersAmount": "10"
+            },
+            "transmissionType": "automatic",
+            "year": "2015",
+            "price": "122000",
+            "currency": "USD",
+            "region": "Abu Dabi",
+            "drive": "RWD",
+            "userId": 10
+        },
+        {
+            "id": 21,
+            "brand": "lexus",
+            "model": "is350",
+            "generation": "XE30",
+            "engine": {
+                "fuel": "gas",
+                "volume": "2.0",
+                "horsePower": "320",
+                "cylindersAmount": "4"
+            },
+            "transmissionType": "automatic",
+            "year": "2019",
+            "price": "35000",
+            "currency": "USD",
+            "region": "Berlin",
+            "drive": "FWD",
+            "userId": 1
+        },
+        {
+            "id": 22,
+            "brand": "lexus",
+            "model": "is250",
+            "generation": "XE20",
+            "engine": {
+                "fuel": "gas",
+                "volume": "6",
+                "horsePower": "670",
+                "cylindersAmount": "10"
+            },
+            "transmissionType": "automatic",
+            "year": "2015",
+            "price": "122000",
+            "currency": "USD",
+            "region": "Abu Dabi",
+            "drive": "RWD",
+            "userId": 10
+        },
+        {
+            "id": 23,
+            "brand": "lexus ",
+            "model": "is350",
+            "generation": "XE20",
             "engine": {
                 "fuel": "gas",
                 "volume": "2.0",

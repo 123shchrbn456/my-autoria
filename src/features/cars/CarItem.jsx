@@ -8,7 +8,8 @@ const CarItem = ({ car }) => {
             {/* <div>
                 {car.images.map((imagePath) => <img src="" />)}
             </div> */}
-            <h4>{`${car.brand + " " + car.model}`}</h4>
+            <h3>{`${car.brand + " " + car.model}`}</h3>
+            <h4>({car.generation})</h4>
             <Link to={`/cars-list/single-car/${car.id}`}>View car</Link>
         </div>
     );

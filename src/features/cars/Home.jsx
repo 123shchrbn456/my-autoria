@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import themeImg from "../../assets/images/theme.png";
 
 export const Home = () => {
     const navigate = useNavigate();
-    // const [inputValues, setInputValues] = useState({ brand: "", transmissionType: "" });
     const [inputValues, setInputValues] = useState({});
 
     const onInputChange = (e) => {
@@ -18,6 +18,10 @@ export const Home = () => {
     };
     return (
         <div>
+            <div>
+                {/* <img src="/src/assets/images/theme.png" alt="" /> */}
+                <img src={themeImg} alt="" />
+            </div>
             <form action="" onSubmit={submitHandler}>
                 {/* Not reliable solution inputValues.brand}  */}
                 <select name="brand" value={inputValues.brand} onChange={onInputChange}>

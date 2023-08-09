@@ -1,26 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import slideReducer from "../features/slices/sliderSlice";
-import productsReducer from "../features/slices/productsSlice";
-import cartReducer from "../features/slices/cartSlice";
-import authReducer from "../features/slices/authSlice";
+import { apiSlice } from "../features/api/apiSlice";
+// import carsReducer from "../features/cars/carsSlice";
 
 export const store = configureStore({
     reducer: {
-        slider: slideReducer,
-        products: productsReducer,
-        cart: cartReducer,
-        user: authReducer,
+        [apiSlice.reducerPath]: apiSlice.reducer,
+        // cars: carsReducer,
     },
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(apiSlice.middleware),
+    devTools: true,
 });
-
-// import { configureStore } from "@reduxjs/toolkit";
-// import { apiSlice } from '../features/api/apiSlice';
-
-// export const store = configureStore({
-//     reducer: {
-//         [apiSlice.reducerPath]: apiSlice.reducer
-//     },
-//     middleware: getDefaultMiddleware =>
-//         getDefaultMiddleware().concat(apiSlice.middleware),
-//     devTools: true
-// })
